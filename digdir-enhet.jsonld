@@ -1,0 +1,137 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "legal": "http://www.w3.org/ns/legal#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "adms": "http://www.w3.org/ns/adms#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "stirdata": "https://w3id.org/stirdata/vocabulary/",
+    "schema": "https://schema.org/",
+    "m8g": "http://data.europa.eu/m8g/",
+    "locn": "http://www.w3.org/ns/locn#",
+    "org": "http://www.w3.org/ns/org#",
+    "legalIdentifier": "legal:legalIdentifier",
+    "organisasjonsnummer": "dcterms:identifier",
+    "navn": {
+      "@id": "legal:legalName",
+      "@language": "no"
+    },
+    "abbreviatedName": "stirdata:abbreviatedName",
+    "naeringskode1": {
+      "@context": {
+        "beskrivelse": {
+          "@id": "skos:prefLabel",
+          "@language": "no"
+        }
+      },
+      "@type": "stirdata:BusinessActivity",
+      "@id": "legal:companyActivity"
+    },
+    "epostadresse": "schema:email",
+    "forretningsadresse": {
+      "@context": {
+        "land": "locn:adminUnitL1",
+        "postnummer": "locn:postCode",
+        "poststed": "locn:addressArea",
+        "addressested": "locn:thoroughfare",
+        "adressenummer": "locn:locatorDesignator",
+        "kommune": "locn:adminUnitL2"
+      },
+      "@id": "m8g:registeredAddress",
+      "@type": "locn:Address"
+    },
+    "postadresse": {
+      "@context": {
+        "land": "locn:country",
+        "postnummer": "locn:postCode",
+        "poststed": "locn:addressArea",
+        "gate": "locn:thoroughfare",
+        "adressenummer": "locn:locatorDesignator",
+        "kommune": "locn:adminUnitL2"
+      },
+      "@id": "stirdata:postalAddress",
+      "@type": "locn:Address"
+    },
+    "telefonInternasjonal": "schema:telephone",
+    "parentOrganization": {
+      "@reverse": "org:hasUnit"
+    }
+  },
+  "@type": "legal:LegalEntity",
+  "@id": "https://data.brreg.no/enhetsregisteret/api/enheter/991825827",
+  "legalIdentifier": {
+    "@type": "adms:Identifier",
+    "skos:notation": "991825827",
+    "dcterms:issued": "2007-10-15",
+    "dcterms:creator": {
+      "@id": "https://data.brreg.no/enhetsregisteret/api/enheter/974760673"
+    }
+  },
+  "abbreviatedName": "Digdir",
+  "org:hasSite": {
+    "@type": "org:Site",
+    "org:siteAddress": "https://www.digdir.no"
+  },
+  "telefonInternasjonal": "+4722451000",
+  "organisasjonsnummer": "991825827",
+  "navn": "DIGITALISERINGSDIREKTORATET",
+  "organisasjonsform": {
+    "kode": "ORGL",
+    "beskrivelse": "Organisasjonsledd"
+  },
+  "hjemmeside": "www.digdir.no",
+  "postadresse": {
+    "land": "Norge",
+    "landkode": "NO",
+    "postnummer": "0114",
+    "poststed": "OSLO",
+    "addressested": "Vika",
+    "adressenummer": "Postboks 1382",
+    "kommune": "OSLO",
+    "kommunenummer": "0301"
+  },
+  "registreringsdatoEnhetsregisteret": "2007-10-15",
+  "naeringskode1": {
+    "kode": "84.110",
+    "beskrivelse": "Generell offentlig administrasjon",
+    "skos:notation": "84110",
+    "stirdata:level": "5",
+    "skos:broader": "http://data.europa.eu/ux2/nace2/8411"
+  },
+  "antallAnsatte": 410,
+  "overordnetEnhet": "932384469",
+  "epostadresse": "postmottak@digdir.no",
+  "telefon": "22 45 10 00",
+  "forretningsadresse": {
+    "land": "Norge",
+    "landkode": "NO",
+    "postnummer": "0585",
+    "poststed": "OSLO",
+    "addressested": "Lørenfaret",
+    "adressenummer": "1C",
+    "kommune": "OSLO",
+    "kommunenummer": "0301"
+  },
+  "institusjonellSektorkode": {
+    "kode": "6100",
+    "beskrivelse": "Statsforvaltningen"
+  },
+  "maalform": "Bokmål",
+  "aktivitet": [
+    "Digitaliseringsdirektoratet skal være regjeringens fremste verktøy for",
+    "raskere og mer samordnet digitalisering av offentlig sektor, og bidra",
+    "til formålstjenlig digitalisering av samfunnet som helhet."
+  ],
+  "parentOrganization": {
+    "@id": "https://data.brreg.no/enhetsregisteret/api/enheter/932384469"
+  },
+  "_links": {
+    "self": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/991825827"
+    },
+    "overordnetEnhet": {
+      "href": "https://data.brreg.no/enhetsregisteret/api/enheter/932384469"
+    }
+  }
+}
