@@ -51,6 +51,8 @@ The following objects have been modified:
 
 Oppløsningsdata/dissolution date, `schema:dissolutionDate`
 
+## Turtle representation
+
 The JSON-LD representation results in the Turtle serialization below. There is some information loss since not all JSON keys are given a semantic definition.
 
 ```turtle
