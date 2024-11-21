@@ -1,0 +1,7 @@
+@prefix legal: <http://www.w3.org/ns/legal#> .
+@prefix schema: <https://schema.org/> .
+
+<https://data.brreg.no/enhetsregisteret/api/enheter/991825827>
+  a <http://www.w3.org/ns/legal#LegalEntity> ;
+  legal:legalName "DIGITALISERINGSDIREKTORATET"@no, "The Norwegian Digitalisation Agency"@en ;
+  schema:email "postmottak@digdir.no" .
