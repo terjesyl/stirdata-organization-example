@@ -1,0 +1,21 @@
+{
+  "@context": {
+    "legal": "http://www.w3.org/ns/legal#",
+    "schema": "https://schema.org/",
+    "LegalEntity": "legal:LegalEntity",
+    "type": "@type",
+    "id": "@id",
+    "name": {
+      "@id": "legal:legalName",
+      "@container": "@language"
+    },
+    "email": "schema:email"
+  },
+  "type": "LegalEntity",
+  "id": "https://data.brreg.no/enhetsregisteret/api/enheter/991825827",
+  "name": {
+    "no": "DIGITALISERINGSDIREKTORATET",
+    "en": "The Norwegian Digitalisation Agency"
+  },
+  "email": "postmottak@digdir.no"
+}

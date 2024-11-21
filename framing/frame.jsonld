@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "legal": "http://www.w3.org/ns/legal#",
+    "schema": "https://schema.org/",
+    "name": {
+      "@id": "legal:legalName",
+      "@container": "@language"
+    },
+    "email": "schema:email"
+  },
+  "@type": "legal:LegalEntity",
+  "email": {},
+  "legal:legalName": {},
+  "@explicit": true
+}
