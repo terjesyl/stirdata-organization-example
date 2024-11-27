@@ -1,5 +1,6 @@
 {
   "@context": {
+    "@base": "https://data.brreg.no/enhetsregisteret/api/enheter/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "legal": "http://www.w3.org/ns/legal#",
@@ -12,7 +13,7 @@
     "locn": "http://www.w3.org/ns/locn#",
     "org": "http://www.w3.org/ns/org#",
     "legalIdentifier": "legal:legalIdentifier",
-    "organisasjonsnummer": "dcterms:identifier",
+    "organisasjonsnummer": "@id",
     "navn": {
       "@id": "legal:legalName",
       "@language": "no"
@@ -59,7 +60,6 @@
     }
   },
   "@type": "legal:LegalEntity",
-  "@id": "https://data.brreg.no/enhetsregisteret/api/enheter/991825827",
   "legalIdentifier": {
     "@type": "adms:Identifier",
     "skos:notation": "991825827",
